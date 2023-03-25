@@ -1,0 +1,2 @@
+1. display : block; <-한 행을 전부 차지
+2. display : line-block; <-내 크기만큼 차지 ex)어울림
