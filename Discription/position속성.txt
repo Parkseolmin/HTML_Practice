@@ -1,0 +1,7 @@
+.box {
+  position : static; /* 기준이 없어요 (좌표적용 불가) */
+  position : relative; /* 기준이 내 원래 위치요 */
+  position : absolute; /* 기준이 내 부모요 */
+  position : fixed; /* 기준이 브라우저 창이요 (viewport) */
+  position을 설정하면 붕 띄어짐
+}
