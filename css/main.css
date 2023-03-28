@@ -6,6 +6,18 @@ div {
     box-sizing: border-box;
 }
 
+/*
+input {
+    box-sizing: border-box;
+}
+
+textarea {
+    box-sizing: border-box;
+}
+*/
+
+
+
 .main-background {
     width: 100%;
     height: 500px;
@@ -43,7 +55,7 @@ div {
     padding: 10px;
 }
 
-button {
+.main-btn {
     display: block;
     margin: auto;
     width: 100px;
@@ -74,18 +86,173 @@ button {
 
 .input-content {
     width: 100%;
-/*    height: 1000px;*/
+    /*    height: 1000px;*/
     background: lightgrey;
     padding: 55px;
+    text
 }
 
 .input-form {
-    width: 600px;
-    max-width: 1000px;
+    width: 500px;
+    max-width: 700px;
     height: 600px;
     background: #eee;
     padding: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.input-form p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #6a6767;
+}
+
+.input-form input {
+    border-radius: 5px;
+    font-size: 15px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid lightgray;
+}
+
+.input-title {
+    font-size: 35px;
+}
+
+.input-title h4 {
+    margin: 0px 0px 50px 0px;
+}
+
+.input-email > input {
+    width: 95%;
+}
+
+.input-firstName {
+    float: left;
+}
+
+.input-firstName input,
+.input-lastName input {
+    width: 200px;
+}
+
+.input-lastName {
+    float: right;
+    /*    margin-left: 80px;*/
+}
+
+.input-text input {
+    border: 2px solid lightgray;
+    width: 95%;
+    height: 170px;
+}
+
+.input-checkbox > input {
+    margin: 20px 5px 0px 0px;
+    /*    height: 20px;*/
+    width: 20px;
+}
+
+.input-checkbox label {
+    position: relative;
+    top: -8px;
+}
+
+#submit {
+    float: right;
+    color: white;
+    width: 150px;
+    height: 50px;
+    background: orange;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+.input-checkbox {
+    float: left;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+}
+
+.cart-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.cart-table td,
+.cart-table th {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+.cart-table th:nth-child(2) {
+    width: 400px;
+}
+
+.cart-title {
+    color: #c2d3de;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.total {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.price {
+    color: #c2d3de;
+    font-weight: 600;
+}
+
+.table-btn {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+.table-btn:hover {
+    background-color: chocolate;
+}
+
+.table-btn:focus {
+    background-color: red;
+}
+
+.table-btn:active {
+    background-color: brown;
 }

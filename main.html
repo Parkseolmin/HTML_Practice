@@ -13,7 +13,7 @@
         <h4 class="main-title">Buy Our Shoes!</h4>
         <div class="content-box">
             <p class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laborum iste voluptas, ratione quos, provident cupiditate optio, a veniam fuga quaerat voluptatem, quibusdam non. Ex non molestias, ut, porro laboriosam.</p>
-            <button>구매하기</button>
+            <button class="main-btn">구매하기</button>
         </div>
         <div class="sub-background">
             <h4>How we design our shoes</h4>
@@ -23,26 +23,85 @@
 
         <div class="input-content">
             <form class="input-form">
-                <div>
-                    <h4>Contact us</h4>
+                <div class="w-100">
+                    <div class="input-title">
+                        <h4>Contact us</h4>
+                    </div>
+                    <div class="input-email">
+                        <p>Your Email</p>
+                        <input type="text" placeholder="email@example.com">
+                    </div>
+                    <div class="input-firstName">
+                        <p>First name</p>
+                        <input type="text">
+                    </div>
+                    <div class="input-lastName">
+                        <p>Last name</p>
+                        <input type="text">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="input-text">
+                        <p>Message</p>
+                        <input type="text">
+                    </div>
+                    <div class="input-checkbox">
+                        <input id="sub" type="checkbox">
+                        <label for="sub">Subscribe</label>
+                    </div>
+                    <div class="input-button">
+                        <button id="submit">SEND</button>
+                    </div>
                 </div>
-                <div>
-                    <p>Your Email</p>
-                    <input type="text">
-                </div>
-                <div>
-                    <p>First name</p>
-                    <input type="text">
-                </div>
-                <div>
-                    <p>Last name</p>
-                    <input type="text">
-                </div>
-                <div>
-                    <p>Message</p>
-                    <input type="text">
-                </div>
+
             </form>
+        </div>
+        <div class="cart-background">
+            <div class="cart-header">
+                <h3>Your Shopping Cart</h3>
+            </div>
+            <table class="cart-table">
+                <thead>
+                    <tr class="cart-title">
+                        <td></td>
+                        <th>ITEM</th>
+                        <th>AMOUNT</th>
+                        <th>PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/converse2.png" width="80px;"></td>
+                        <td>
+                            <p style="margin: 0px 0px 5px 0px; font-size: 20px; font-weight: 700;">Converse</p><span style="color: #c2d3de; font-weight: 600;">ChuckTaylor AllStar Black</span>
+                        </td>
+                        <td style="text-align: end;">1</td>
+                        <td class="price">€1979.00</td>
+                        <td class="total">€1979.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/converse1.png" width="80px;"></td>
+                        <td>
+                            <p style="margin: 0px 0px 5px 0px; font-size: 20px; font-weight: 700;">Converse</p><span style="color: #c2d3de; font-weight: 600;">ChuckTaylor AllStar Ivory</span>
+                        </td>
+                        <td style="text-align: end;">1</td>
+                        <td class="price">€989.00</td>
+                        <td class="total">€989.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>총 금액</p>
+                        </td>
+                        <td colspan="4" style="text-align: right">€ 2968.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <button class="table-btn" style="float: right;"><a href="layout4.html">구매하기</a></button>
+                        </td>
+                        <div style="clear: both"></div>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
