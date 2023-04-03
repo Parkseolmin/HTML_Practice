@@ -3,14 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>HTML Practice</title>
     <link rel="stylesheet" href="css/main.css">
-    <!--    <link rel="stylesheet" href="css/nomalize.css">-->
+    <!--    구글 검색시 파란 제목으로 뜨는 글귀-->
+    <meta name="description" content="html 잘하는 코딩애플입니다.">
+    <!--    검색에 도움을 주는 키워드-->
+    <meta name="keywords" content="HTML,CSS,JavaScript,자바스크립트,코딩">
+    <!--    실제 접속시 스마트폰 기기의 실제 가로폭을 보고 렌더링 명령-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="아이콘경로.ico" type="image/x-icon">
+    <!--    파비콘-->
+    <link rel="shortcut icon" href="/img/favi/favicon.ico">
+    <!--추가-->
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--    구글 폰트-->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <nav class="nav-container">
+        <div class="nav-item nav-first">Logo</div>
+        <div style="flex-grow: 1"></div>
+        <div class="nav-item nav-etc">Products</div>
+        <div class="nav-item nav-etc">Services</div>
+    </nav>
     <div class="main-background">
-        <h4 class="main-title">Buy Our Shoes!</h4>
+        <h4 class="main-title">Buy Our Shoes! Now On Sale</h4>
         <div class="content-box">
             <p class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laborum iste voluptas, ratione quos, provident cupiditate optio, a veniam fuga quaerat voluptatem, quibusdam non. Ex non molestias, ut, porro laboriosam.</p>
             <button class="main-btn">구매하기</button>
@@ -55,6 +84,30 @@
 
             </form>
         </div>
+        <nav class="nav-box">
+            <div class="nav-boxitem">
+                <i class="fas fa-shopping-cart fa-3x"></i>
+                <h4>Fast Shopping</h4>
+                <p>lorem ipsum</p>
+            </div>
+            <div class="nav-boxitem">
+                <i class="fas fa-globe-asia fa-3x"></i>
+                <h4>Fast Shopping</h4>
+                <p>lorem ipsum</p>
+            </div>
+            <div class="nav-boxitem">
+                <i class="fas fa-user fa-3x"></i>
+                <h4>Fast Shopping</h4>
+                <p>lorem ipsum</p>
+            </div>
+            <div class="nav-boxitem">
+                <i class="fas fa-tshirt fa-3x"></i>
+                <h4>Fast Shopping</h4>
+                <p>lorem ipsum</p>
+            </div>
+        </nav>
+        <div style="clear: both"></div>
+
         <div class="cart-background">
             <div class="cart-header">
                 <h3>Your Shopping Cart</h3>
@@ -96,12 +149,42 @@
                     </tr>
                     <tr>
                         <td colspan="5">
-                            <button class="table-btn" style="float: right;"><a href="layout4.html">구매하기</a></button>
+                            <button class="table-btn" style="float: right;"><a href="layout4.html" class="custom-link">구매하기</a></button>
                         </td>
                         <div style="clear: both"></div>
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <!--        상품 애니메이션-->
+        <div class="shop-bg">
+            <div class="shop-container">
+                <div class="shop-item">
+                    <div style="position: relative">
+                        <div class="overlay-wrap">
+                            <div class="overlay-black">$60</div>
+                        </div>
+                        <img src="img/product1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div style="position: relative">
+                        <div class="overlay-wrap">
+                            <div class="overlay-black">$120</div>
+                        </div>
+                        <img src="img/product2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div style="position: relative">
+                        <div class="overlay-wrap">
+                            <div class="overlay-black">$30</div>
+                        </div>
+                        <img src="img/product3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

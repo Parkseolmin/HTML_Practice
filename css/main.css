@@ -1,5 +1,22 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+
 body {
     margin: 0px;
+    font-family: '이쁜폰트';
+    /*    font-family: 'Raleway', sans-serif;*/
+}
+
+/*안티앨리어싱(폰트를 부드럽게 보이게해줌*/
+p,
+h4,
+h3,
+h2,
+h1,
+span {
+    transform: rotate(0.03deg);
 }
 
 div {
@@ -187,9 +204,12 @@ table {
 }
 
 .cart-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     background-color: #c2d3de;
-    padding: 30px;
+    padding: 30px 315px 30px 315px;
     /*    display: flex;*/
     /*    flex-direction: column;*/
     /*    align-items: center;*/
@@ -197,7 +217,7 @@ table {
 
 .cart-header {
     width: 100%;
-    text-align: center;
+    /*    text-align: center;*/
     margin-bottom: 20px;
 }
 
@@ -245,14 +265,190 @@ table {
     cursor: pointer;
 }
 
+/*마우스를 올렸을 때 상태를 변경*/
 .table-btn:hover {
     background-color: chocolate;
 }
 
+/*마우스가 포커싱된 상태를 변경*/
 .table-btn:focus {
     background-color: red;
 }
 
+/*마우스를 클릭 중 상태를 변경*/
 .table-btn:active {
     background-color: brown;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+
+/*방문 전 링크 스타일링 : link*/
+/*방문 후 링크 스타일링 : visited*/
+
+.flex-item {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #FF7678;
+}
+
+/*
+    display: flex;
+    justify-content: 가로정렬
+    align-items: 상하정렬
+*/
+
+.nav-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+    background: #FF7678;
+}
+
+.nav-item {
+    margin-right: 10px;
+    padding: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-first {
+    font-size: 50px;
+}
+
+.nav-etc {
+    font-size: 30px;
+}
+
+.nav-box {
+    /*
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: space-around;
+*/
+    width: 80%;
+    background: #eee;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.nav-boxitem {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 50px;
+}
+
+.nav-boxitem i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 10px;
+}
+
+.shop-bg {
+    background: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img {
+    width: 100%;
+    /*    이미지 아래 보이지 않는 공간(선)이 있음 block으로 처리*/
+    display: block;
+}
+
+/*
+.overlay {
+    //position: absolute는 상위relative 기준으로 붙음
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+*/
+
+.overlay-wrap {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay-black {
+    margin-top: 50%;
+}
+
+/*반응형 웹페이지*/
+/*media query 문법은 항상 밑에 있어야 함*/
+@media screen and (max-width: 1200px) {
+
+    /*
+    .nav-box {
+        flex-wrap: wrap;
+    }
+
+    .nav-boxitem {
+        width: 400px;
+    }
+*/
+    .nav-boxitem {
+        width: 50%;
+    }
+
+    .cart-background {
+        padding: 30px 50px 30px 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-boxitem {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .cart-background {
+        padding: 30px 100px 30px 100px;
+    }
 }
