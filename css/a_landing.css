@@ -1,0 +1,231 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.main-background {
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    min-height: 550px;
+    padding: 20px;
+    color: white;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-text {
+    float: left;
+    margin-top: 50px;
+}
+
+.main-iphone {
+    width: 400px;
+    float: right;
+    margin-top: 95px;
+}
+
+
+.sub-background {
+    padding: 20px;
+
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sub-text {
+    text-align: center;
+}
+
+.sub-text > h4 {
+    margin-bottom: 0px;
+}
+
+.btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: '이쁜폰트';
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-black {
+    background: #444;
+    color: white;
+}
+
+.btn-black:hover {}
+
+.service {
+    background-color: #4e61c0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 30px 50px 30px;
+}
+
+.service > div > h4 {
+    margin: 10px auto 50px auto;
+}
+
+.service-item {
+    display: flex;
+}
+
+.service-item > div {
+    width: 25%;
+}
+
+.service-icon {
+    background: white;
+    color: #4e61c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+@media screen and (max-width : 992px) {
+    .main-iphone {
+        width: 260px;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .main-text {
+        float: none;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .service-item {
+        flex-direction: column;
+    }
+
+    .service-item div {
+        width: 100%;
+    }
+
+}
+
+.portfolio {
+    padding: 60px 0px;
+    text-align: center;
+}
+
+
+.portfolio-container {
+    /*    text-align: left;*/
+    max-width: 1200px;
+    margin: auto;
+}
+
+.portfolio-item1 {
+    float: left;
+    /*    가장 큰 부모너비가 width:100%로 설정되어 있어 가능*/
+    width: 50%;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img2/portfolio-1.jpg);
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img2/portfolio-2.jpg);
+}
+
+.img3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img2/portfolio-3.jpg);
+}
+
+.img4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img2/portfolio-4.jpg);
+}
+
+.portfolio-text {
+    text-align: left;
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.white-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border: 0px solid white;
+    display: flex;
+    transition: all 1s;
+}
+
+.white-box:hover {
+    border: 30px solid white;
+}
+
+.footer-bg {
+    width: 100%;
+    padding: 30px;
+    margin: 0px auto 50px auto;
+    text-align: center;
+    clear: both;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 250px;
+    display: flex;
+}
+
+.footer-div {
+    text-align: center;
+    width: 33%;
+}
+
+.footer-div i {
+    color: white;
+    background: #4e61c0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+.line {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

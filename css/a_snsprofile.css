@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: #f7f9fc
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h4,
+p {
+    margin: 10px 0px
+}
+
+.background {
+    padding: 20px;
+    overflow: hidden;
+    background: #f7f9fc;
+    box-sizing: border-box;
+}
+
+.white-box {
+    background: white;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 2px #eee;
+}
+
+.white-box i {
+    color: #70B9F7;
+}
+
+.pill {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+    padding: 3px 12px 5px 12px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+
+.progress-custom {
+    margin: auto;
+}
+
+.btn-custom {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background: #70b9f7;
+    border: none;
+    border-radius: 10px;
+}
